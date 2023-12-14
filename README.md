@@ -22,7 +22,7 @@ Development Stage:
 - Test Operation
 
 [Deployment]
-- Telegram Messaging
+- Telegram Messaging ✅
 - AWS Cloud Deployment
 
 
