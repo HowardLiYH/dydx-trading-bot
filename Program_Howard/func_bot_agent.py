@@ -2,6 +2,7 @@
 from func_private import place_market_order, check_order_status
 from datetime import datetime, timedelta
 import time
+from func_messaging import send_message
 
 from pprint import pprint
 
@@ -200,7 +201,8 @@ class BotAgent:
                     print("Unexpected Error closing order 1")
                     print(order_status_close_order)
 
-                    # !!! CONSIDER SNEDING MESSAGE HERE !!!
+                    # Send Message
+                    send_message(f"Failed to execute. Code red. Error Code: 100")
 
                     # ABORT
                     exit(1)
@@ -211,7 +213,8 @@ class BotAgent:
                 print("Unexpected Error closing order 1")
                 print(order_status_close_order)
 
-                # !!! CONSIDER SNEDING MESSAGE HERE !!!
+                # Send Message
+                send_message(f"Failed to execute. Code red. Error Code: 101")
 
                 # ABORT
                 exit(1)
