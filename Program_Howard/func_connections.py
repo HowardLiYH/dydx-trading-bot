@@ -13,7 +13,7 @@ from constants import (
     DYDX_API_SECRET,
     DYDX_API_PASSPHRASE,
     STARK_PRIVATE_KEY,
-    HTTP_PROVIDER
+    HTTP_PROVIDER,
 )
 
 # Connect to DYDX

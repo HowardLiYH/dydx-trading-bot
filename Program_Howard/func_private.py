@@ -8,6 +8,44 @@ from pprint import pprint
 from func_utils import format_number
 
 
+# Get existing open positions
+def is_open_positions(client, market):
+
+    # Protect API
+    time.sleep(0.2)
+
+    # Get positions
+    all_positions = client.private.get_positions(
+        market=market,
+        status="OPEN"
+    )
+
+    # Determine if open
+    if len(all_positions.data['positions']) > 0:
+        return True
+    else:
+        return False
+
+
+
+# Check order status
+def check_order_status(client, order_id):
+    '''
+        Input:
+            1) Client information from func_connections.py
+            2) Order ID
+        Output:
+            1) Order status
+    '''
+    order = client.private.get_order_by_id(order_id)
+    if order.data:
+        if "order" in order.data.keys():
+            return order.data['order']['status']
+    return "FAILED"
+
+
+
+
 
 # Place market order
 def place_market_order(client, market, side, size, price, reduce_only):
@@ -22,13 +60,17 @@ def place_market_order(client, market, side, size, price, reduce_only):
         Output:
             1) Order information
     '''
+    print("place_market_order: start")
+
     # Get Position ID
     account_resposne = client.private.get_account()
     position_id = account_resposne.data['account']['positionId']
+    print(f"place_market_order: position_id obtained: {position_id}")
 
     # Get expiration time
     server_time = client.public.get_time()
     expiration = datetime.fromisoformat(server_time.data['iso'].replace('Z','+00:00')) + timedelta(seconds=70)
+
 
     # Place an order
     placed_order = client.private.create_order(
@@ -69,7 +111,7 @@ def abort_all_positions(client):
     # Get markets for reference of tick size
     markets = client.public.get_markets().data
 
-    pprint(markets)
+    # pprint(markets)
 
     # Protect API
     time.sleep(0.5)
