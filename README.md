@@ -1,9 +1,9 @@
 ![image](https://github.com/HowardLiYH/dydx-trading-bot/assets/60827239/ab62edcf-6fd5-47c2-9582-c21819639e81)
 
 
-# Automated Pair Trading on DYDX
+# Automated Pair Trading on DYDX (V3)
 
-Development Stage:
+### Development Stage on Sepolia, ETH Testnet:
 
 [Stage 1] ✅
 - Set up connections to DYDX
@@ -21,11 +21,18 @@ Development Stage:
 - Open Positions
 - Test Operation
 
-[Deployment]
-- Telegram Messaging ✅
+[Deployment] ✅
+- Telegram Messaging 
 - AWS Cloud Deployment
+- To receive Bot Updates and view current status, please go to Telegram and visit [@howard_dydx_bot](https://t.me/howard_dydx_bot)
 
-
+[Usage Improvements] 
+- Consider migrating onto exchanges for better liquidity and stable developing environments
+- Adjust formula and constants to calculate more rigorous hedge ratio, half-life, and other parameters
+- Adjust capital allocation rules following the Kelly Criterion
+- Adjust exit rules
+- Build a UI (React, FastAPI, Telegram)
+- Add ML for position sizing (eg. XGBoost to define the confidence of the model given specific trades for determining the amount of capital that should be used)
 
 
 
