@@ -21,8 +21,8 @@ Development Stage:
 - Open Positions
 - Test Operation
 
-[Deployment]
-- Telegram Messaging ✅
+[Deployment] ✅
+- Telegram Messaging 
 - AWS Cloud Deployment
 
 
