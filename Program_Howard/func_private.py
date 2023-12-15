@@ -4,6 +4,7 @@ Connecting DYDX Private requests
 
 from datetime import datetime, timedelta
 import time
+import json
 from pprint import pprint
 from func_utils import format_number
 
@@ -167,6 +168,11 @@ def abort_all_positions(client):
 
             # Protect API
             time.sleep(0.2)
+
+    # Override json file with empty list
+    bot_agent = []
+    with open("bot_agents.json", "w") as outfile:
+        json.dump(bot_agent, outfile)
 
     # Return closed orders
     return close_orders
