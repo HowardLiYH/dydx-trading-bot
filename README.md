@@ -3,7 +3,7 @@
 
 # Automated Pair Trading on DYDX (V3)
 
-Development Stage (Sepolia, ETH Testnet):
+### Development Stage on Sepolia, ETH Testnet:
 
 [Stage 1] ✅
 - Set up connections to DYDX
