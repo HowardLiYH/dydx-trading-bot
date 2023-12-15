@@ -25,7 +25,7 @@ Development Stage:
 - Telegram Messaging 
 - AWS Cloud Deployment
 
-
+For receiving Bot Updates and viewing current status, please go to Telegram and visit [@howard_dydx_bot](https://t.me/howard_dydx_bot)
 
 
 
