@@ -24,8 +24,15 @@ Development Stage:
 [Deployment] ✅
 - Telegram Messaging 
 - AWS Cloud Deployment
+- To receive Bot Updates and view current status, please go to Telegram and visit [@howard_dydx_bot](https://t.me/howard_dydx_bot)
 
-For receiving Bot Updates and viewing current status, please go to Telegram and visit [@howard_dydx_bot](https://t.me/howard_dydx_bot)
+[Usage Improvements] 
+- Consider migrating onto exchanges for better liquidity and stable developing environments
+- Adjust formula and constants to calculate more rigorous hedge ratio, half-life, and other parameters
+- Adjust capital allocation rules following the Kelly Criterion
+- Adjust exit rules
+- Build a UI (React, FastAPI, Telegram)
+- Add ML for position sizing (eg. XGBoost to define the confidence of the model given specific trades for determining the amount of capital that should be used)
 
 
 
