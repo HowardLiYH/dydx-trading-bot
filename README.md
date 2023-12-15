@@ -1,9 +1,9 @@
 ![image](https://github.com/HowardLiYH/dydx-trading-bot/assets/60827239/ab62edcf-6fd5-47c2-9582-c21819639e81)
 
 
-# Automated Pair Trading on DYDX
+# Automated Pair Trading on DYDX (V3)
 
-Development Stage:
+Development Stage (Sepolia, ETH Testnet):
 
 [Stage 1] ✅
 - Set up connections to DYDX
