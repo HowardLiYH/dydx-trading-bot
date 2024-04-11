@@ -3,6 +3,8 @@
 
 # Automated Pair Trading on DYDX (V3)
 
+![Screenshot 2023-12-11 at 1 52 27 AM](https://github.com/HowardLiYH/dydx-trading-bot/assets/60827239/22a1623b-2d25-4a80-a7a0-e57845573f79)
+
 ### Development Stage on Sepolia, ETH Testnet:
 
 [Stage 1] ✅
@@ -33,6 +35,8 @@
 - Adjust exit rules
 - Build a UI (React, FastAPI, Telegram)
 - Add ML for position sizing (eg. XGBoost to define the confidence of the model given specific trades for determining the amount of capital that should be used)
+
+
 
 
 
